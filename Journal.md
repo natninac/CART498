@@ -61,3 +61,27 @@ as for now I imply it in the map.
 I also created a user tester google form that will hopefully aid me in finding the specific issues in my user flow.
 
 ## Week 4
+
+- Strategic foundations
+-   Design Pilars
+-   Product hypothesis
+-   User personas
+- Features list
+- Detailed Features
+-   Wireframes
+-   User flow
+-   Mockups
+- Design System
+-   Color palettes
+-   Typographic scale
+-   Reusable component libraries
+- Testing & Data Proof
+-    Prototype history
+-    Survey links
+-    Raw usability metrics
+- Iterations
+-   Design pivots over tested features
+- Reader Friendly
+-   Well structured and easy to read
+- Clean Delivery Format
+-   Direct documentation URL
