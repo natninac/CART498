@@ -64,14 +64,31 @@ I also created a user tester google form that will hopefully aid me in finding t
 
 - Strategic foundations
 -   Design Pilars
+-   The design pillars (fun, social, discovery) continued to guide each design decision, especially as I started working on the design system. I looked at various festive poster resources online to find a color palette that was jovial, but there is still work to be done
+  until I achieve a cohesive look. The social and discovery pillars were also influential when it comes to the creation of profiles for the spectators. I wanted them to have their own page where they could follow their desired bands, look back at past attended shows and view upcoming shows from musicians they follow.
 -   Product hypothesis
 -   User personas
+<img width="1212" height="672" alt="image" src="https://github.com/user-attachments/assets/ca76af3d-cc68-4730-8aca-57870890bde6" />
+I added a new persona based on my research to guide the spectator flow. This is an individual who works in the music industry and is extremely passionate about it. She values her free time and wants to optimize it to see as many shows as she can. This made me focus the user experience on efficiency of discovery.
+
 - Features list
+-   <img width="255" height="557" alt="image" src="https://github.com/user-attachments/assets/d9d848a9-81d1-4107-841c-08bc6ac0f6fa" />
+Map with radius, shows what shows are happening in the area.
+-   <img width="231" height="452" alt="image" src="https://github.com/user-attachments/assets/cae89eba-1008-44ab-9a0b-eb38f3b43920" />
+Attending show page, with artist description, express tipping and artist bookmarking.
+-   <img width="235" height="468" alt="image" src="https://github.com/user-attachments/assets/26ee22d4-d946-4147-9dbc-741dfbdea036" />
+Artist profile showing number of shows performed, location, and number of followers. A live button appears when the artist is performing, with the title of the live event showing.
+-   <img width="315" height="704" alt="image" src="https://github.com/user-attachments/assets/ee250273-2c52-4834-841b-8cd3da34d044" />
+Browse page that allows you to sort by nearby or for you, giving different discovery options.
+-   <img width="320" height="714" alt="image" src="https://github.com/user-attachments/assets/9be2b0a9-b5a5-4025-bf2e-23f1c2f2a755" />
+Spectator profile page with archive of attended shows and a list of following musicians. There is also an upcoming shows section that indicated future shows by followed artists.
 - Detailed Features
 -   Wireframes
--   User flow
+-   <img width="835" height="1089" alt="image" src="https://github.com/user-attachments/assets/2e1365fa-2c59-4ee6-9c0f-3d83ed6112f2" />
+User flow
 -   Mockups
-- Design System
+- <img width="346" height="703" alt="image" src="https://github.com/user-attachments/assets/3abfb930-afea-4aa4-a6ab-6f97b7139bda" />
+Design System
 -   Color palettes
 -   Typographic scale
 -   Reusable component libraries
