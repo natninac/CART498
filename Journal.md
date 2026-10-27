@@ -138,7 +138,7 @@ The prototype evolved from a basic wireframe into a substantial mockup, with two
 
 #### Survey
 
-[Usability test form]([https://docs.google.com/forms/d/e/1FAIpQLSfD81bQN5EaK84VIom5KfkQXO__CtsDn0xdDJbBp7PRoR0s8w/viewform?usp=publish-editor](https://forms.gle/ikU2bmCYxR2UJUsp9))
+[Usability test form](https://forms.gle/MuxyuecvLv9muTb38)
 
 I kept the **test duration** question, which was very useful last time, and added **error rate** and **help rate** questions (self-estimated number of mistakes and requests for help).
 
