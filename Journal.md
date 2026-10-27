@@ -2,7 +2,7 @@
 
 This page is a dedicated journal for CART498.
 
-## Week 2
+## Sprint 1
 
 ### Preliminary Research
 
@@ -60,45 +60,103 @@ as for now I imply it in the map.
 
 I also created a user tester google form that will hopefully aid me in finding the specific issues in my user flow.
 
-## Week 4
+## Sprint 2
 
-- Strategic foundations
--   Design Pilars
--   The design pillars (fun, social, discovery) continued to guide each design decision, especially as I started working on the design system. I looked at various festive poster resources online to find a color palette that was jovial, but there is still work to be done
-  until I achieve a cohesive look. The social and discovery pillars were also influential when it comes to the creation of profiles for the spectators. I wanted them to have their own page where they could follow their desired bands, look back at past attended shows and view upcoming shows from musicians they follow.
--   Product hypothesis
--   User personas
-<img width="1212" height="672" alt="image" src="https://github.com/user-attachments/assets/ca76af3d-cc68-4730-8aca-57870890bde6" />
-I added a new persona based on my research to guide the spectator flow. This is an individual who works in the music industry and is extremely passionate about it. She values her free time and wants to optimize it to see as many shows as she can. This made me focus the user experience on efficiency of discovery.
+### Strategic Foundations
 
-- Features list
--   <img width="255" height="557" alt="image" src="https://github.com/user-attachments/assets/d9d848a9-81d1-4107-841c-08bc6ac0f6fa" />
-Map with radius, shows what shows are happening in the area.
--   <img width="231" height="452" alt="image" src="https://github.com/user-attachments/assets/cae89eba-1008-44ab-9a0b-eb38f3b43920" />
-Attending show page, with artist description, express tipping and artist bookmarking.
--   <img width="235" height="468" alt="image" src="https://github.com/user-attachments/assets/26ee22d4-d946-4147-9dbc-741dfbdea036" />
-Artist profile showing number of shows performed, location, and number of followers. A live button appears when the artist is performing, with the title of the live event showing.
--   <img width="315" height="704" alt="image" src="https://github.com/user-attachments/assets/ee250273-2c52-4834-841b-8cd3da34d044" />
-Browse page that allows you to sort by nearby or for you, giving different discovery options.
--   <img width="320" height="714" alt="image" src="https://github.com/user-attachments/assets/9be2b0a9-b5a5-4025-bf2e-23f1c2f2a755" />
-Spectator profile page with archive of attended shows and a list of following musicians. There is also an upcoming shows section that indicated future shows by followed artists.
-- Detailed Features
--   Wireframes
--   <img width="835" height="1089" alt="image" src="https://github.com/user-attachments/assets/2e1365fa-2c59-4ee6-9c0f-3d83ed6112f2" />
-User flow
--   Mockups
-- <img width="346" height="703" alt="image" src="https://github.com/user-attachments/assets/3abfb930-afea-4aa4-a6ab-6f97b7139bda" />
-Design System
--   Color palettes
--   Typographic scale
--   Reusable component libraries
-- Testing & Data Proof
--    Prototype history
--    Survey links
--    Raw usability metrics
-- Iterations
--   Design pivots over tested features
-- Reader Friendly
--   Well structured and easy to read
-- Clean Delivery Format
--   Direct documentation URL
+#### Product Hypothesis
+
+> **Corner Set: the optimized music discovery hub.** I believe a live map of nearby performances, paired with features that allow users to easily find and follow artists, will connect local musicians and spectators more effectively than social media or event listings.
+
+#### Design Pillars
+
+The three pillars **Fun**, **Social** and **Discovery** continued to guide every decision this sprint.
+
+- **Fun** drove the visual direction. I looked at various festive poster resources online to find a color palette that was jovial, but there is still work to be done until I achieve a cohesive look.
+- **Social** and **Discovery** influenced the new spectator profile: a personal page to follow favourite bands, look back on attended shows, and see upcoming shows from followed musicians.
+
+#### New Persona
+
+<img width="800" alt="Spectator persona: music-industry worker who wants to see as many shows as possible" src="https://github.com/user-attachments/assets/ca76af3d-cc68-4730-8aca-57870890bde6" />
+
+I added a spectator persona to guide the spectator flow. She works in the music industry, is deeply passionate about it, and wants to make the most of her free time by seeing as many shows as possible.
+
+**Design impact:** the spectator experience now prioritizes *efficiency of discovery*: this means fewer taps between opening the app and finding a show.
+
+---
+
+### Features
+
+| Screen | Feature | Why |
+|:---:|---|---|
+| <img width="160" alt="Map screen with proximity radius" src="https://github.com/user-attachments/assets/d9d848a9-81d1-4107-841c-08bc6ac0f6fa" /> | **Map with radius**: shows performances happening nearby. | *Discovery.* The fastest route from "I'm free" to "I'm at a show," built for the efficiency-driven persona. |
+| <img width="160" alt="Attending show page" src="https://github.com/user-attachments/assets/cae89eba-1008-44ab-9a0b-eb38f3b43920" /> | **Attending show page**: artist description, express tipping and artist bookmarking. | *Social / Fun.* Lets spectators support musicians in the moment with minimal friction. |
+| <img width="160" alt="Artist profile with live button" src="https://github.com/user-attachments/assets/26ee22d4-d946-4147-9dbc-741dfbdea036" /> | **Artist profile**: shows performed, location and followers. A **Live** button appears during a performance, displaying the event title. | *Social.* Gives musicians a credible presence for networking and growing a local following. |
+| <img width="160" alt="Browse page with Nearby and For You tabs" src="https://github.com/user-attachments/assets/ee250273-2c52-4834-841b-8cd3da34d044" /> | **Browse page**: sort by *Nearby* or *For You*. | *Discovery.* Two modes: what's close right now vs. what matches your taste. |
+| <img width="160" alt="Spectator profile page" src="https://github.com/user-attachments/assets/9be2b0a9-b5a5-4025-bf2e-23f1c2f2a755" /> | **Spectator profile**: archive of attended shows, followed musicians, and upcoming shows from followed artists. | *Social / Discovery.* Turns one-off attendance into an ongoing relationship with artists. |
+
+
+---
+
+### User Flow & Mockups
+
+#### User Flow
+
+<img width="700" alt="Sprint 2 user flow" src="https://github.com/user-attachments/assets/2e1365fa-2c59-4ee6-9c0f-3d83ed6112f2" />
+
+#### Mockup
+
+<img width="435" height="858" alt="image" src="https://github.com/user-attachments/assets/b01e5323-97ca-431c-94df-700c2791486b" />
+
+
+---
+
+### Design System
+
+<img width="800" alt="Working design system: colour palette, type scale and components" src="https://github.com/user-attachments/assets/b901425c-8dee-41e6-ae77-7669697931aa" />
+
+<img width="453" height="923" alt="image" src="https://github.com/user-attachments/assets/baf37081-b222-4286-94b5-a94622989855" />
+
+
+The colour palette, typographic scale and component library are established in the working file. In Sprint 3 I'll consolidate them, pruning unused components and locking in a cohesive palette.
+
+
+---
+
+### Testing & Data Proof
+
+#### Sprint 2 Testing Hypothesis
+
+With the added colour hierarchy and map placeholder, I expect testers to complete the core task (**choose a show, attend it, and exit**) in **under 2 minutes**, needing help **fewer than 2 times**.
+
+#### Prototype History
+
+The prototype evolved from a basic wireframe into a substantial mockup, with two changes driven directly by last review's feedback:
+
+- **Colour for visibility:** some buttons were hard to spot; colour now makes key actions stand out.
+- **Map placeholder on the home page:** some testers got lost; a map image now anchors the screen.
+
+#### Survey
+
+[Usability test form]([https://docs.google.com/forms/d/e/1FAIpQLSfD81bQN5EaK84VIom5KfkQXO__CtsDn0xdDJbBp7PRoR0s8w/viewform?usp=publish-editor](https://forms.gle/ikU2bmCYxR2UJUsp9))
+
+I kept the **test duration** question, which was very useful last time, and added **error rate** and **help rate** questions (self-estimated number of mistakes and requests for help).
+
+#### Results
+
+| Metric | Sprint 1 | Sprint 2 | Target |
+|---|:---:|:---:|:---:|
+| Avg. task time | Around 1 min | — | < 2 min |
+| Avg. errors | — | — | — |
+| Avg. help requests | — | — | < 2 |
+| Testers | 10 | — | — |
+
+---
+
+### Iterations
+
+| Change | Reason |
+|---|---|
+| **Removed ticket purchasing** | It was a misread of the app's purpose. Corner Set is a discovery hub, not a point of sale. |
+| **Design system applied** | Colour and type sizes now create a visual hierarchy, reorganizing how information is read. This was less a pivot than an evolution. |
+| **Button visibility & map placeholder** | Direct responses to testers getting stuck in Sprint 1 (see Prototype History). |
