@@ -209,7 +209,8 @@ I merged the spectator and musician perspectives into one tester persona. Trista
 
 #### User Flow
 
-<!-- TODO: Sprint 3 user flow: single entry point, performer unlock branch -->
+<img width="1229" height="1132" alt="image" src="https://github.com/user-attachments/assets/8bbd2f7a-07b6-4cdb-8115-0a185471ca2a" />
+
 
 #### Mockup
 
@@ -217,9 +218,8 @@ I merged the spectator and musician perspectives into one tester persona. Trista
 
 ### Design System
 
-<!-- TODO: component sheet image -->
 
-The palette and type scale are now locked.
+The palette and type scale are locked. They will remain the same unless I receive important feedback against it.
 
 | Role                                      | Hex       |
 | ----------------------------------------- | --------- |
@@ -238,6 +238,8 @@ The palette and type scale are now locked.
 | Body           | Medium      | 15   |
 | Button / label | SemiBold    | 16   |
 | Caption        | SemiBold    | 12   |
+
+<img width="1339" height="756" alt="image" src="https://github.com/user-attachments/assets/aef6b2a8-61f4-4ea9-88bd-92df02a7e725" />
 
 Two components were added: `cornerset / map canvas` (day / night) and `cornerset / map pin` (crowd × pulse). Every `cornerset / action` button (primary, secondary, destructive) now shows its pressed state on hover, genre chips toggle on tap, and the tip confirmation shows a disabled state until an amount is chosen.
 
@@ -258,7 +260,7 @@ Every button, tab and nav item in the test flow is wired, every screen has a way
 
 #### Survey
 
-[Variant A form](#) · [Variant B form](#) <!-- TODO: paste links -->
+[Variant A form](https://docs.google.com/forms/d/e/1FAIpQLSdxILp7vNYi9VyB1g2xR1podb2ayd8pmKFI_hoFNGJHL3hMdg/viewform?usp=header) · [Variant B form](https://docs.google.com/forms/d/e/1FAIpQLSdxILp7vNYi9VyB1g2xR1podb2ayd8pmKFI_hoFNGJHL3hMdg/viewform?usp=header) 
 
 Each variant has its own identical two-minute form, so results can be compared side by side. The form opens with a completion question; anyone who found tasks difficult or couldn't finish is sent to a follow-up page asking which task and what got in the way. It then has 1–5 grids for each task and each core feature (map, tip option, listening vs performing, getting back Home), an overall ease rating and one optional open question. Every scale names both ends ("easy or difficult") to keep the phrasing neutral.
 
