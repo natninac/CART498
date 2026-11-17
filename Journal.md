@@ -160,3 +160,158 @@ I kept the **test duration** question, which was very useful last time, and adde
 | **Removed ticket purchasing** | It was a misread of the app's purpose. Corner Set is a discovery hub, not a point of sale. |
 | **Design system applied** | Colour and type sizes now create a visual hierarchy, reorganizing how information is read. This was less a pivot than an evolution. |
 | **Button visibility & map placeholder** | Direct responses to testers getting stuck in Sprint 1 (see Prototype History). |
+
+## Sprint 3
+
+### Strategic Foundations
+
+#### Product Hypothesis
+
+> **Corner Set: one account to discover live music and to perform it.** I believe a live map that shows crowd energy at a glance, paired with one-tap tipping and the option to go live from the same account, will connect local musicians and spectators more effectively than social media or event listings.
+
+#### Design Pillars
+
+The three pillars Fun, Social and Discovery continued to guide every decision this sprint.
+
+- **Fun** drove the map changes: the radiuses around live sets are animated, and the map switches to a night theme when you're performing.
+- **Social** shaped the new messaging and sharing features.
+- **Discovery** drove the map, where animated radiuses make it more pleasing to the eye. It also drove the Following option, so users see when artists they follow go live, and Browse, with its For You tab and artist profiles.
+
+#### New Persona
+
+<!-- TODO: persona card image -->
+
+Tester persona: Tristan, a Montréal street guitarist who is also a regular show-goer.
+
+I merged the spectator and musician perspectives into one tester persona. Tristan spends his evenings off finding other artists' sets, and on other nights plays his own. Testers play Tristan for the whole session: in the audience for Tasks 1–3, then going live for Tasks 4–5.
+
+**Design impact:** the app no longer asks "are you an audience member or a performer?" when it opens. The same person moves between both roles, so performing is not a separate path.
+
+### Features
+
+| Screen                                                                                                                                                | Feature                                                                                                                                                                                                                                                                                                   | Why                                                                                                                                                              |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Home<br><img src="images/home%20discover%20live%20music.png" width="140">                                                                             | **Map preview:** a "Live Now" carousel of current sets above a live map card. Tapping a card or a map pin opens the artist preview; "View all" opens Browse; "View more" opens the full map; **Start Live** begins the performer flow.                                                                    | **Discovery.** Everything needed to pick a show is on the first screen.                                                                                          |
+| Map screen<br><img src="images/map%20live%20nearby.png" width="140">                                                                                  | **Map themes:** built from the Map Maker plugin in two themes, Standard (day) for discovering shows and Aubergine (night) for live sets. Genre filters (Indie, R&B, Acoustic) sit on top of the map.                                                                                                      | **Discovery / Fun.** Replaces the free map asset from earlier sprints; the plugin's day and night options separate discovering from performing.                  |
+| Live pins <!-- TODO: add a map pin image -->                                                                                                          | **Crowd pins:** each set is a pin showing a listener icon and count. The radius around the pin grows with the crowd (small, medium, large) and pulses on a 0.9 s loop.                                                                                                                                    | **Fun / Discovery.** The radius was hard to notice; animating it draws the eye to live sets.                                                                     |
+| Performer unlock sheet<br><img src="images/performer%20mode%20unlock.png" width="140">                                                                | **Unified account:** the first tap on Start Live opens "Go live on Corner Set", which lists three perks with icons (show up live on the map, receive tips from your crowd, see stats after every set) and offers _Unlock performer mode_ or _Not now_. Once unlocked, Start Live goes straight to set-up. | **Social.** Musicians and spectators share one account, without asking anyone to choose a role up front.                                                         |
+| Attending show page (A/B)<br><img src="images/attending%20michael%20a.png" width="140"><br><img src="images/attending%20michael%20b.png" width="140"> | **Variant A:** Tip, Save and Quit as three equal icon actions. **Variant B:** a full-width orange **Tip Michael** button, with Save and Quit side by side underneath.                                                                                                                                     | Tipping is how artists make money from their sets, which is what draws many of them to the app. Tests whether giving it visual priority makes it easier to find. |
+| Tipping overlay<br><img src="images/tip%20michael%20choose%20amount.png" width="140">                                                                 | **Tip flow:** preset amounts ($1, $5, $10) or a custom amount and a confirmation step.                                                                                                                                                                                                                    | **Social.** Tipping is a rewarding way to interact with an audience member's favorite artists.                                                                   |
+| Save / bookmark<br><img src="images/attending%20michael%20saved.png" width="140">                                                                     | **Save toggle:** saving a set switches the page to its saved state; tapping again unsaves it.                                                                                                                                                                                                             | **Social/Discovery.** Lets spectators keep track of sets they want to remember.                                                                                  |
+| Profile, Following, Shows attended<br><img src="images/shows%20attended.png" width="140">                                                             | **Profile sub-pages:** tapping "attended shows" or "following" on the profile opens a list page with the same layout: profile header, the active stat highlighted, a title and short description, and artist cards.                                                                                       | **Social.** One consistent pattern for the user's history and relationships.                                                                                     |
+| Set up your live set<br><img src="images/set%20up%20your%20live%20set.png" width="140">                                                               | **Duration picker:** choose 15, 30, 45 or 60 minutes; the Start Live button updates to match (e.g. "Start Live · 30 min").                                                                                                                                                                                | **Fun** Performers commit to a set length before going live, without needing to do any tedious time-counting.                                                    |
+| Live set screen<br><img src="images/live%20set%20extended.png" width="140">                                                                           | **Live dashboard:** countdown timer, night map with the performer's own pin and spectator count, **+15 minutes** to extend, live radius control and a tip jar showing earnings toward a goal.                                                                                                             | **Fun / Social.** Performers see their crowd and tips in real time, extend their set and can keep playing.                                                       |
+| Connection interrupted<br><img src="images/live%20set%20connection%20interrupted.png" width="140">                                                    | **Offline recovery:** if the connection drops, the set keeps running and a banner explains that nearby listeners will update once reconnected.                                                                                                                                                            | **Social.** A dropped signal shouldn't end a performance.                                                                                                        |
+| End set & Set statistics<br><img src="images/end%20set%20dialog.png" width="140"><br><img src="images/set%20statistics.png" width="140">              | **Wrap-up:** an end-set confirmation ("Your listeners will see that your set has ended"), then a stats screen with spectators, tips earned and tips received.                                                                                                                                             | **Social.** Performers get proof of their impact after every set.                                                                                                |
+| Test landing & task screens<br><img src="images/start%20session%20welcome.png" width="140">                                                           | **Self-guided test:** a welcome page stating the persona and the five tasks, a **Start session** button, an instruction screen before each task that confirms the previous one is complete, and a _Restart test_ link.                                                                                    | Lets outside reviewers test the prototype without me present.                                                                                                    |
+
+### User Flow & Mockups
+
+#### User Flow
+
+<!-- TODO: Sprint 3 user flow: single entry point, performer unlock branch -->
+
+#### Mockup
+
+<img src="images/variant%20b%20prominent%20tip%20action.png" alt="All Sprint 3 prototype screens">
+
+### Design System
+
+<!-- TODO: component sheet image -->
+
+The palette and type scale are now locked.
+
+| Role                                      | Hex       |
+| ----------------------------------------- | --------- |
+| Background (cream)                        | `#FFF5EE` |
+| Text (ink)                                | `#171713` |
+| Primary (orange): main actions, live pins | `#E66338` |
+| Secondary (teal): highlights, cards       | `#A5D5CF` |
+| Muted text                                | `#625B52` |
+| Destructive: Quit, End                    | `#F48D80` |
+
+| Style          | Jost weight | Size |
+| -------------- | ----------- | ---- |
+| Artist name    | ExtraBold   | 40   |
+| Heading        | ExtraBold   | 24   |
+| Body large     | Medium      | 20   |
+| Body           | Medium      | 15   |
+| Button / label | SemiBold    | 16   |
+| Caption        | SemiBold    | 12   |
+
+Two components were added: `cornerset / map canvas` (day / night) and `cornerset / map pin` (crowd × pulse). Every `cornerset / action` button (primary, secondary, destructive) now shows its pressed state on hover, genre chips toggle on tap, and the tip confirmation shows a disabled state until an amount is chosen.
+
+### Testing & Data Proof
+
+#### Sprint 3 Testing Hypothesis
+
+With a full-width Tip button (Variant B), I expect testers to find the tip option more easily and need less help on the tipping task than with the equal-weight icon row (Variant A).
+
+#### Prototype History
+
+The prototype evolved from a mockup into a production prototype that runs on its own. A recurring comment from testers was that the split between audience and performer was confusing, and that the map was hard to navigate because the radiuses were hard to notice. Two changes respond directly to this:
+
+- **One entry point:** the "choose your profile" screen was removed. Everyone enters the same app, and performing is unlocked when needed.
+- **Animated radiuses:** the radius around each pin now pulses, so it's easier to notice.
+
+Every button, tab and nav item in the test flow is wired, every screen has a way back to Home or the start, and the five tasks hand off to each other automatically.
+
+#### Survey
+
+[Variant A form](#) · [Variant B form](#) <!-- TODO: paste links -->
+
+Each variant has its own identical two-minute form, so results can be compared side by side. The form opens with a completion question; anyone who found tasks difficult or couldn't finish is sent to a follow-up page asking which task and what got in the way. It then has 1–5 grids for each task and each core feature (map, tip option, listening vs performing, getting back Home), an overall ease rating and one optional open question. Every scale names both ends ("easy or difficult") to keep the phrasing neutral.
+
+#### Previous Reviews
+
+**Review 1 (Sprint 1): start and end a live set. 10 testers.**
+
+| Question                             | Result                                                                      |
+| ------------------------------------ | --------------------------------------------------------------------------- |
+| Completed the task                   | 9 of 10 (one tester didn't see the start button)                            |
+| Confidence they could publish a set  | 4.3 / 5                                                                     |
+| Satisfaction with set length options | 4.1 / 5                                                                     |
+| Clarity of location settings         | 3.4 / 5, the lowest score                                                   |
+| Information needed before going live | Performance location (5), session duration (4), who can see the session (1) |
+
+- **Hardest:** setting the duration (testers didn't realize the button led to more options), starting a live set, picking a location and radius, and ending a set (more clicks than expected).
+- **Easiest:** the live set screen with +15 minutes, and the Live Now view.
+- **Suggestions:** a confirmation step before going live, a precise location map, a way to undo +15, and putting the duration setup earlier.
+
+**Review 2 (Sprint 2): find a concert and attend it. 12 testers.**
+
+| Question                                  | Result                                                       |
+| ----------------------------------------- | ------------------------------------------------------------ |
+| Completed the task                        | 12 of 12 (11 easily, 1 with difficulty)                      |
+| Task difficulty                           | 3.25 / 10 average (lower is easier); 8 of 12 rated it 1–3 |
+| Clarity of the map                        | 3.7 / 5                                                      |
+| Relied on the blue hotspot hints 5+ times | 3 of 12 (3 never needed them)                                |
+| Errors made                               | None: 2 · fewer than 2: 4 · fewer than 5: 5 · more than 5: 1 |
+
+- **Hardest:** switching between performer and audience (3 testers), the map (the radius circle wasn't recognized as showing nearby events), and the artist banner above the map.
+- **Easiest:** attending, tipping and following; the artist card; the profile.
+- **Suggestions:** hover previews on the map, clearer distance and time left for each set, a tag showing whether you're in performer or audience mode, artist bios and audio previews, and more contrast in fonts and colours.
+
+**What Sprint 3 changed because of it:** the performer/audience confusion led to the unified account, and the unnoticed radius led to animating it.
+
+#### Results
+
+| Metric                           | Sprint 1 | Sprint 2 | Sprint 3 A | Sprint 3 B | Target |
+| -------------------------------- | :------: | :------: | :--------: | :--------: | :----: |
+| Testers                          |    10    |    12    |     —      |     —      |   —    |
+| Completed the task               |   90%    |   100%   |     —      |     —      |  100%  |
+| Map / location clarity (1–5)     |   3.4    |   3.7    |     —      |     —      |  ≥ 4   |
+| "Find the tip option" ease (1–5) |    —     |    —     |     —      |     —      |  ≥ 4   |
+| Overall ease (1–5)               |    —     |    —     |     —      |     —      |  ≥ 4   |
+
+### Iterations
+
+| Change                                     | Reason                                                                                                                                                                   |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Removed the audience / performer fork      | Testers found the split confusing. One account with an in-app performer unlock keeps both roles without a choice up front.                                               |
+| Animated the radiuses                      | The radiuses were hard to notice. Animating them makes live sets stand out.                                                                                              |
+| Replaced the free map asset with Map Maker | The Map Maker plugin has day and night options, which separate discovering from performing.                                                                              |
+| Added explanatory text | Testers weren't always sure what they were looking at (in Review 2, the radius circle on the map wasn't recognized). Short descriptions now explain what each screen and feature does. |
+| Merged personas into one tester persona    | Matches the unified account: the same person discovers shows and plays them.                                                                                             |
+| A/B tested the tip action                  | Tipping is the money-making feature, and earning from their art is what draws many artists to the app. The layout decision will be backed by data instead of assumption. |
+
